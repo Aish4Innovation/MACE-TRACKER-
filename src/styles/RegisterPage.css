@@ -1,0 +1,114 @@
+body {
+    background: linear-gradient(to bottom right, #e0f2ff, #ffffff);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .container h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+  }
+  
+  .container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input group for spacing and error messages */
+  .input-group {
+    margin-bottom: 12px; /* Space between each input field group */
+    text-align: left; /* Align labels and errors to the left */
+  }
+  
+  .container input[type="text"],
+  .container input[type="tel"],
+  .container input[type="email"],
+  .container input[type="password"] {
+    padding: 12px;
+    width: calc(100% - 24px); /* Account for padding */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    margin: 0; /* Reset margin from input-group */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .container input.input-error {
+    border-color: #dc3545; /* Red border for error */
+  }
+  
+  .error-message {
+    color: #dc3545; /* Red text for error messages */
+    font-size: 0.85rem;
+    margin-top: 5px;
+    margin-left: 5px; /* Indent slightly */
+  }
+  
+  .container button {
+    padding: 14px;
+    background: #1e3a8a;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: background 0.3s ease;
+  }
+  
+  .container button:hover {
+    background: #143375;
+  }
+  
+  .container .options {
+    /* This is not used in RegisterPage.js, but keeping for consistency if you add it later */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 13px;
+  }
+  
+  .container .options label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container .options input[type="checkbox"] {
+    margin-right: 6px;
+  }
+  
+  .container .options a {
+    color: #1e3a8a;
+    text-decoration: none;
+  }
+  
+  .container .options a:hover {
+    text-decoration: underline;
+  }
+  
+  .container .register-link {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .container .register-link a {
+    color: #1e3a8a;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .container .register-link a:hover {
+    text-decoration: underline;
+  }

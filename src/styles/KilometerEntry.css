@@ -1,0 +1,469 @@
+/* salesapp/src/styles/KilometerEntry.css */
+
+/* --- General Page Container --- */
+.kilometer-entry-container {
+  padding: 30px;
+  max-width: 1400px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* --- Header, Search Bar, and Add Button --- */
+.kilometer-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+}
+
+.kilometer-entry-header h2 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-add-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #888;
+  font-size: 0.9em;
+}
+
+.search-bar input {
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 0.95em;
+  width: 250px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #5cb85c;
+  box-shadow: 0 0 0 0.2rem rgba(92, 184, 92, 0.25);
+  outline: none;
+}
+
+.add-kilometer-btn {
+  background-color: #1abc9c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-kilometer-btn:hover {
+  background-color: #16a085;
+  transform: translateY(-1px);
+}
+
+/* --- Filter Row Styling --- */
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  background-color: #eaf6f4;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: inset 0 1px 5px rgba(0,0,0,0.03);
+}
+
+.filter-row .filter-icon {
+  font-size: 1.5em;
+  color: #1abc9c;
+  margin-right: 5px;
+}
+
+.filter-row .filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.filter-row select,
+.filter-row input[type="date"] {
+  padding: 10px 15px;
+  font-size: 0.95em;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  min-width: 180px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%236c757d" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 1.2em;
+}
+
+.filter-row select:focus,
+.filter-row input[type="date"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.clear-filters-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border: 1px solid #e74c3c;
+  background-color: #fcebeb;
+  color: #c0392b;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+
+.clear-filters-btn:hover {
+  background-color: #f7d2d2;
+  color: #a5281a;
+}
+
+/* --- Kilometer Entry Cards Container --- */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
+}
+
+/* --- Individual Kilometer Card --- */
+.kilometer-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.kilometer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.card-details p {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.card-details p strong {
+  color: #333;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+  gap: 10px;
+}
+
+/* --- Action Buttons --- */
+.action-btn {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-btn.view-btn {
+  background-color: #17a2b8;
+  color: white;
+}
+.action-btn.view-btn:hover {
+  background-color: #138496;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(23, 162, 184, 0.3);
+}
+.action-btn.edit-btn {
+  background-color: #ffc107;
+  color: #333;
+}
+.action-btn.edit-btn:hover {
+  background-color: #e0a800;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(255, 193, 7, 0.3);
+}
+.action-btn.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+.action-btn.delete-btn:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(220, 53, 69, 0.3);
+}
+
+/* --- Status Badge Styling --- */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+.status-badge.yet-to-authorize {
+  background-color: #ffc107;
+  color: #333;
+}
+.status-badge.authorized {
+  background-color: #28a745;
+}
+.status-badge.rejected {
+  background-color: #dc3545;
+}
+
+/* --- No Items Message --- */
+.no-items-message {
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 50px;
+  color: #666;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+/* --- Modal Form Styling --- */
+.modal-overlay { /* Added for modal backdrop */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content { /* Added for modal content box */
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 650px; /* Adjust as needed */
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.close-btn { /* Style for the 'X' close button inside modal */
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.modal-content h3 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 1.6em;
+  font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 0.95em;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 14px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 0.95em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+/* Styles for the buttons within the modal form */
+.form-actions {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 15px; /* Space between buttons */
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee; /* Separator line above buttons */
+}
+
+.form-actions button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-actions button[type="submit"] {
+  /* This targets the 'Add' or 'Update' button */
+  background-color: #1abc9c; /* Set to desired green */
+  color: white;
+}
+
+.form-actions button[type="submit"]:hover {
+  background-color: #16a085; /* Darker green on hover */
+  transform: translateY(-1px);
+}
+
+.form-actions .cancel-btn {
+  background-color: #6c757d; /* Consistent grey for cancel */
+  color: white;
+}
+
+.form-actions .cancel-btn:hover {
+  background-color: #5a6268;
+  transform: translateY(-1px);
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+  .card-container {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kilometer-entry-container {
+      padding: 20px;
+      margin: 20px auto;
+  }
+  .kilometer-entry-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+  }
+  .search-add-group {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+  }
+  .search-bar {
+      width: 100%;
+  }
+  .search-bar input {
+      width: calc(100% - 45px);
+  }
+  .add-kilometer-btn {
+      width: 100%;
+      justify-content: center;
+  }
+  .card-container {
+      grid-template-columns: 1fr;
+  }
+}
+
+.modal-actions .close-button { /* More specific selector to target the button in the details modal */
+  background-color: #6c757d; /* Grey color */
+  color: white;
+  /* ... other styles ... */
+}
+
+.modal-actions .close-button:hover {
+  background-color: #5a6268; /* Darker grey on hover */
+  /* ... other styles ... */
+}

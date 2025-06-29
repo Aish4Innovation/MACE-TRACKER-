@@ -1,0 +1,41 @@
+/* salesapp/src/styles/DashboardLayout.css */
+
+.dashboard-layout {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    background-color: #f0f2f5; /* Light grey background for content area */
+}
+
+.dashboard-content {
+    flex-grow: 1; /* Allows this area to expand and take available space */
+    padding: 20px; /* Padding around the content */
+    margin-top: 60px; /* IMPORTANT: Push content down below the fixed top nav bar (nav height is 60px) */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    width: 100%;
+}
+
+.charts-grid {
+    display: flex;
+    flex-direction: column; /* Stack charts vertically */
+    gap: 24px; /* Add spacing between charts */
+    margin-top: 20px;
+}
+
+.chart-placeholder {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    min-height: 500px;
+    position: relative;
+    overflow: visible; /* keeps tooltip & legend inside the box */
+  }
+  
+
+.chart-placeholder h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 18px;
+    text-align: center;
+}
