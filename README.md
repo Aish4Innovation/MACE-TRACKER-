@@ -77,6 +77,7 @@ Express.js: A fast, minimalist web framework for building the API server.
 RESTful API: A well-structured set of endpoints to serve data to the frontend.
 
 Database:
+
 MySQL: A widely used open-source relational database management system.
 
 
