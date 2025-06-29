@@ -4,6 +4,7 @@
 A full-stack web application for managing a fleet of vans, tracking kilometer entries, inventory items, stoppage records, and user authentication. Built with **React**, **Node.js**, **Express**, and **MySQL**.
 
 ✨ Features
+
 Secure Authentication: User login and logout functionality to ensure data security.
 
 ![image](https://github.com/user-attachments/assets/73610d97-939a-4b8d-a3a3-17c3d1f752d0)
