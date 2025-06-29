@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# MACE-TRACKER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+A full-stack web application for managing a fleet of vans, tracking kilometer entries, inventory items, stoppage records, and user authentication. Built with **React**, **Node.js**, **Express**, and **MySQL**.
 
-In the project directory, you can run:
+✨ Features
 
-### `npm start`
+Secure Authentication: User login and logout functionality to ensure data security.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://github.com/user-attachments/assets/73610d97-939a-4b8d-a3a3-17c3d1f752d0)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![image](https://github.com/user-attachments/assets/78f62e57-3f52-4850-8713-0aec4b51c601)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Van Master: A module to manage and maintain a master list of all vehicles in the fleet.
 
-### `npm run build`
+![image](https://github.com/user-attachments/assets/6635497b-ddb5-4934-966e-b57573154cf6)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/user-attachments/assets/684f6096-c64f-40c5-97ca-92d215fc251f)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Inventory Management: Track and categorize inventory items with defined categories like Finished Goods, Raw Material, Packaging, Sample, and Other.
 
-### `npm run eject`
+![image](https://github.com/user-attachments/assets/1ccd139b-e319-421e-aecc-532c3a2e6fcd)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://github.com/user-attachments/assets/cf9cb186-19c2-47a9-b913-077d81575b27)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Kilometer Entry: Log and monitor distance traveled by each van, essential for fuel consumption and maintenance tracking.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://github.com/user-attachments/assets/ad7ee0fa-6206-4afb-b8ee-86f3d68b6220)
 
-## Learn More
+![image](https://github.com/user-attachments/assets/5e4f9bce-b7aa-4c32-bded-7c5ae7b39222)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Stoppage Entry: Record and analyze reasons for van stoppages, helping to identify operational bottlenecks and improve fleet efficiency.
 
-### Code Splitting
+![image](https://github.com/user-attachments/assets/3c9be6f7-d462-4ad2-9d7b-0165d773882f)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://github.com/user-attachments/assets/ea8318a2-9fe7-4f56-ada3-039f49653ed8)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Interactive Reports & Analysis Dashboard: Visualize key metrics through dynamic charts and graphs, including:
 
-### Making a Progressive Web App
+Van distribution by state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![image](https://github.com/user-attachments/assets/795d1a60-de87-4e93-82d5-e1304251e3aa)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Inventory distribution by category.
 
-### Deployment
+![image](https://github.com/user-attachments/assets/50103779-26fc-4c9f-a6f1-5378d83fcab5)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+Stoppage reason distribution.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://github.com/user-attachments/assets/47733f94-fff2-4488-97ab-3b839954a82f)
+
+🚀 Technologies Used
+Frontend:
+
+React.js: A robust JavaScript library for building the user interface.
+
+Chart.js: A flexible charting library for creating interactive data visualizations.
+
+React Chart.js 2: The official React wrapper for Chart.js.
+
+Axios: A promise-based HTTP client for making API requests to the backend.
+
+
+Backend:
+
+Node.js: The JavaScript runtime environment.
+
+Express.js: A fast, minimalist web framework for building the API server.
+
+RESTful API: A well-structured set of endpoints to serve data to the frontend.
+
+Database:
+
+MySQL: A widely used open-source relational database management system.
+
